@@ -19,10 +19,13 @@ Visit [`localhost:4000`](http://localhost:4000) and enter a positive number into
 
 If the server goes over the atom count (usually by more than a few) the VM will exit and dump a `erl_crash.dump` log.
 
+The exiting process's output will look something like this...
+
+```
 no more index entries in atom_tab (max=1048576)
 
 Crash dump is being written to: erl_crash.dump...done
-
+```
 ## Setting the Atom Limit
 
 The atom limit is settable via the `+t` erlang flag.
