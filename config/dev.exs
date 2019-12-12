@@ -28,7 +28,8 @@ config :atom_crasher, AtomCrasherWeb.Endpoint,
       "--watch-stdin",
       cd: Path.expand("../assets", __DIR__)
     ]
-  ]
+  ],
+  live_view: [signing_salt: "better_put_something_more_random_than_this_in_prod"]
 
 # ## SSL Support
 #

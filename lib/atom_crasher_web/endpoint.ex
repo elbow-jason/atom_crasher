@@ -1,6 +1,8 @@
 defmodule AtomCrasherWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :atom_crasher
 
+  socket "/live", Phoenix.LiveView.Socket
+
   socket "/socket", AtomCrasherWeb.UserSocket,
     websocket: true,
     longpoll: false
